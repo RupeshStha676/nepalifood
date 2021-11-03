@@ -7,12 +7,11 @@ import {PrimaryButton} from '../components/Button';
 const OnBoardScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
-      <View style={{height: 400}}>
+      <View style={{height: 500}}>
         <Image
           style={{
             width: '100%',
             resizeMode: 'contain',
-            top: -150,
           }}
           source={require('../../assets/food.png')}
         />
@@ -33,7 +32,7 @@ const OnBoardScreen = ({navigation}) => {
           </Text>
         </View>
         <View style={style.indicatorContainer}>
-          <View style={style.currentIndicator} />
+          <View style={style.indicator} />
           <View style={style.indicator} />
           <View style={style.indicator} />
         </View>

@@ -40,7 +40,7 @@ const HomeScreen = ({navigation}) => {
                 backgroundColor:
                   selectedCategoryIndex == index
                     ? COLORS.primary
-                    : COLORS.secondary,
+                    : COLORS.cyan,
                 ...style.categoryBtn,
               }}>
               <View style={style.categoryBtnImgCon}>
@@ -51,7 +51,7 @@ const HomeScreen = ({navigation}) => {
               </View>
               <Text
                 style={{
-                  fontSize: 15,
+                  fontSize: 13,
                   fontWeight: 'bold',
                   marginLeft: 10,
                   color:
@@ -162,7 +162,7 @@ const style = StyleSheet.create({
     height: 50,
     borderRadius: 10,
     flexDirection: 'row',
-    backgroundColor: COLORS.light,
+    backgroundColor: COLORS.cyan,
     alignItems: 'center',
     paddingHorizontal: 20,
   },
@@ -170,7 +170,7 @@ const style = StyleSheet.create({
     width: 50,
     height: 50,
     marginLeft: 10,
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.cyan,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -211,7 +211,7 @@ const style = StyleSheet.create({
     height: 30,
     width: 30,
     borderRadius: 20,
-    backgroundColor: COLORS.primary,
+    backgroundColor: COLORS.cyan,
     justifyContent: 'center',
     alignItems: 'center',
   },
