@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor={COLORS.white} barStyle="dark-content" />
+      <StatusBar backgroundColor={COLORS.cyan} barStyle="dark-content"/>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="mainScreen" component={mainScreen} />
         <Stack.Screen name="Home" component={BottomNavigator} />
