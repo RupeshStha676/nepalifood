@@ -70,32 +70,15 @@ const CartScreen = ({navigation}) => {
 };
 const style = StyleSheet.create({
   header: {
-    paddingVertical: 20,
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginHorizontal: 20,
+    paddingVertical: 20,flexDirection: 'row',
+    alignItems: 'center',marginHorizontal: 20,
+
   },
-  cartCard: {
-    height: 100,
-    elevation: 15,
-    borderRadius: 10,
-    backgroundColor: COLORS.light,
-    marginVertical: 10,
-    marginHorizontal: 20,
-    paddingHorizontal: 10,
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  actionBtn: {
-    width: 80,
-    height: 30,
-    backgroundColor: COLORS.cyan,
-    borderRadius: 30,
-    paddingHorizontal: 5,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignContent: 'center',
-  },
+  cartCard: {height: 100,elevation: 15,borderRadius: 10,backgroundColor: COLORS.light,
+    marginVertical: 10,marginHorizontal: 20,paddingHorizontal: 10,flexDirection: 'row',alignItems: 'center',},
+
+  actionBtn: {width: 80,height: 30,backgroundColor: COLORS.cyan,borderRadius: 30,paddingHorizontal: 5,
+    flexDirection: 'row',justifyContent: 'center',alignContent: 'center',}
 });
 
 export default CartScreen;
