@@ -4,27 +4,23 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import COLORS from '../../consts/colors';
 import {PrimaryButton} from '../components/Button';
 
-const OnBoardScreen = ({navigation}) => {
+const mainScreen = ({navigation}) => {
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
       <View style={{height: 500}}>
         <Image
-          style={{
-            width: '100%',
-            resizeMode: 'contain',
-          }}
           source={require('../../assets/food.png')}
         />
       </View>
       <View style={style.textContainer}>
         <View>
-          <Text style={{fontSize: 32, fontWeight: 'bold', textAlign: 'center'}}>
+          <Text style={{fontSize: 30, fontWeight: 'bold', textAlign: 'center'}}>
             Nepali Food
           </Text>
           <Text
             style={{
-              marginTop: 20,
-              fontSize: 18,
+              marginTop: 25,
+              fontSize: 20,
               textAlign: 'center',
               color: COLORS.grey,
             }}>
@@ -38,7 +34,7 @@ const OnBoardScreen = ({navigation}) => {
         </View>
         <PrimaryButton
           onPress={() => navigation.navigate('Home')}
-          title="Get Started"
+          title="Visit Now"
         />
       </View>
     </SafeAreaView>
@@ -59,20 +55,14 @@ const style = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  currentIndicator: {
-    height: 12,
-    width: 30,
-    borderRadius: 10,
-    backgroundColor: COLORS.primary,
-    marginHorizontal: 5,
-  },
+
   indicator: {
-    height: 12,
-    width: 12,
-    borderRadius: 6,
-    backgroundColor: COLORS.grey,
+    height: 15,
+    width: 15,
+    borderRadius: 7,
+    backgroundColor: COLORS.cyan,
     marginHorizontal: 5,
   },
 });
 
-export default OnBoardScreen;
+export default mainScreen;
