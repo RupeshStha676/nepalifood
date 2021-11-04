@@ -147,7 +147,7 @@ const style = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
   },
-  
+
   sortBtn: {width: 50,height: 50,marginLeft: 10,backgroundColor: COLORS.cyan,borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
@@ -174,7 +174,7 @@ const style = StyleSheet.create({
     marginTop: 50,
     borderRadius: 15,
     elevation: 13,
-    backgroundColor: COLORS.white,
+    backgroundColor: COLORS.light,
   },
   addToCartBtn: {
     height: 30,
